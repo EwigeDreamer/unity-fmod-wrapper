@@ -1,0 +1,21 @@
+{
+    "name": "EwigeDreamer.FMODWrapper.Editor",
+    "rootNamespace": "ED.FMODWrapper",
+    "references": [
+        "EwigeDreamer.FMODWrapper",
+        "FMODUnity",
+        "FMODUnityEditor",
+        "EwigeDreamer.Additional"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

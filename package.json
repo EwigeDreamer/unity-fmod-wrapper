@@ -1,0 +1,20 @@
+{
+  "name": "com.ewigedreamer.fmodwrapper",
+  "version": "1.0.0",
+  "displayName": "ED Unity FMOD Wrapper",
+  "description": "Audio Service with FMOD Wrapper.",
+  "unity": "2021.3",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "fmod",
+    "audio",
+    "wrapper"
+  ],
+  "author": {
+    "name": "Pavel Sborshchikov",
+    "email": "ewigedreamer@gmail.com",
+    "url": "https://github.com/EwigeDreamer"
+  }
+}
