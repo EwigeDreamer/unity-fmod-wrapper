@@ -1,6 +1,6 @@
 {
   "name": "com.ewigedreamer.fmodwrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "ED Unity FMOD Wrapper",
   "description": "Audio Service with FMOD Wrapper.",
   "unity": "2021.3",
