@@ -28,7 +28,7 @@ namespace ED.FMODWrapper.Editor
                 new[] { "Text files", "txt" });
             if (!File.Exists(guidsPath))
                 throw new InvalidOperationException("GUID text file not found");
-            PlayerPrefs.GetString(GuidsFilePathPrefsKey, guidsPath);
+            PlayerPrefs.SetString(GuidsFilePathPrefsKey, guidsPath);
             
             var data = File.ReadAllText(guidsPath);
             var matches = Regex.Matches(data, @"(?<guid>{\S+})\s+(?<full_path>(?<type>\S+):/(?<path>[\S ]*))");
