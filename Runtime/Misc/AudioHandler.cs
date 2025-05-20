@@ -4,6 +4,7 @@ using ED.FMODWrapper.Interfaces;
 using FMOD;
 using FMOD.Studio;
 using FMODUnity;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace ED.FMODWrapper.Misc
 {

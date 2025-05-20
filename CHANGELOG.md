@@ -1,3 +1,7 @@
+## [1.0.3] - 2025-05-20
+### Fixed
+- STOP_MODE ambiguous reference
+
 ## [1.0.2] - 2025-05-06
 ### Added
 - AudioIds PropertyDrawer feature
