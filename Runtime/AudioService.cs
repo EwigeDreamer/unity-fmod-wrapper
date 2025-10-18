@@ -19,6 +19,7 @@ namespace ED.FMODWrapper
         public void PlayOneShot(BaseAudioSnapshotId id, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal((GUID)id, attributes3d, parameters);
         public void PlayOneShot(EventReference reference, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal(reference.Guid, attributes3d, parameters);
 
+        public IAudioHandler CreateHandler(GUID id) => new AudioHandler(id);
         public IAudioHandler CreateHandler(BaseAudioEventId id) => new AudioHandler(id);
         public IAudioHandler CreateHandler(BaseAudioSnapshotId id) => new AudioHandler(id);
         public IAudioHandler CreateHandler(EventReference reference) => new AudioHandler(reference);

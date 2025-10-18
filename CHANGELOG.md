@@ -1,3 +1,7 @@
+## [1.0.4] - 2025-10-18
+### Added
+- Create AudioHandler by GUID
+
 ## [1.0.3] - 2025-05-20
 ### Fixed
 - STOP_MODE ambiguous reference

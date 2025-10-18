@@ -13,6 +13,10 @@ namespace ED.FMODWrapper.Misc
         private EventInstance _instance;
         private readonly Dictionary<string, PARAMETER_DESCRIPTION> _parameters = new();
 
+        public AudioHandler(GUID id)
+        {
+            _instance = RuntimeManager.CreateInstance(id);
+        }
         public AudioHandler(BaseAudioEventId id)
         {
             _instance = RuntimeManager.CreateInstance((GUID)id);
