@@ -15,6 +15,7 @@ namespace ED.FMODWrapper
         private readonly Dictionary<string, VCA> _vcaDict = new();
         private readonly Dictionary<string, PARAMETER_DESCRIPTION> _parameters = new();
         
+        public void PlayOneShot(GUID guid, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal(guid, attributes3d, parameters);
         public void PlayOneShot(BaseAudioEventId id, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal((GUID)id, attributes3d, parameters);
         public void PlayOneShot(BaseAudioSnapshotId id, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal((GUID)id, attributes3d, parameters);
         public void PlayOneShot(EventReference reference, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters) => PlayOneShotInternal(reference.Guid, attributes3d, parameters);

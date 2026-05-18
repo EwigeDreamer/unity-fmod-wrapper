@@ -1,3 +1,7 @@
+## [1.0.5] - 2026-05-19
+### Changed
+- Added methods in IAudioService
+
 ## [1.0.4] - 2025-10-18
 ### Added
 - Create AudioHandler by GUID

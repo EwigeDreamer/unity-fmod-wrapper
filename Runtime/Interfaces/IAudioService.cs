@@ -1,14 +1,17 @@
 using ED.FMODWrapper.Enums;
 using ED.FMODWrapper.Misc;
 using FMODUnity;
+using FMOD;
 
 namespace ED.FMODWrapper.Interfaces
 {
     public interface IAudioService
     {
+        void PlayOneShot(GUID guid, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters);
         void PlayOneShot(BaseAudioEventId id, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters);
         void PlayOneShot(BaseAudioSnapshotId id, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters);
         void PlayOneShot(EventReference reference, AudioAttributes3D attributes3d, params (BaseAudioParameterId id, float value)[] parameters);
+        IAudioHandler CreateHandler(GUID guid);
         IAudioHandler CreateHandler(BaseAudioEventId id);
         IAudioHandler CreateHandler(BaseAudioSnapshotId id);
         IAudioHandler CreateHandler(EventReference reference);
